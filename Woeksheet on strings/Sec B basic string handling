@@ -1,0 +1,25 @@
+// 1
+let name = "Riya";
+let score = 92;
+console.log(`Hello ${name}, you scored ${score} in Web Development!`);
+
+// 2
+let myName = "Your Name";
+console.log(myName);
+
+// 3
+let combined = "Alpha" + "Intern";
+console.log(combined);
+
+// 4
+let str = "AlphaIntern";
+console.log(str[3]); // 'h'
+
+// 5
+console.log("backend developer".toUpperCase());
+
+// 6
+console.log("MERN STACK".toLowerCase());
+
+// 7
+console.log("AlphaIntern".length);
