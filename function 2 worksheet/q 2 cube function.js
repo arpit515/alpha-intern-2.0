@@ -1,0 +1,1 @@
+const cube = num => num * num * num;

@@ -1,0 +1,109 @@
+SECTION B
+
+
+     TASK 1
+
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT> cd "git -practice"
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git init
+Initialized empty Git repository in C:/Users/kalir/OneDrive/Desktop/WEB DEV COHORT/git -practice/.git/
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> dir
+
+
+    Directory: C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l        13-05-2025     21:55              0 bike.txt
+-a---l        13-05-2025     21:54              0 car.txt
+
+
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git add .
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git commit -m"added car and bike text files"
+[main (root-commit) 5a1f89a] added car and bike text files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bike.txt
+ create mode 100644 car.txt
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git log
+commit 5a1f89a4938a7a8816f016cfc3c3e32ad4a140d7 (HEAD -> main)
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bike.txt
+ create mode 100644 car.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bike.txt
+ create mode 100644 car.txt
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git log
+commit 5a1f89a4938a7a8816f016cfc3c3e32ad4a140d7 (HEAD -> main)
+Author: bhawna <kaliramanbhawna23@gmail.com>
+Date:   Tue May 13 22:01:06 2025 +0530
+
+    added car and bike text files
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git log --oneline
+5a1f89a (HEAD -> main) added car and bike text files
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git status > git-output.txt
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git log --oneline >>git-output.txt
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> notepad git-output.txt
+
+
+      TASK 2
+
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git commit -m"hello.txt added"
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git-output.txt
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git add .
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git commit -m"hello.txt added"
+[main 6764211] hello.txt added
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git-output.txt
+ create mode 100644 hello.txt
+ create mode 100644 hello.txt
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git log --oneline
+6764211 (HEAD -> main) hello.txt added
+6764211 (HEAD -> main) hello.txt added
+5a1f89a added car and bike text files
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git reset --hard HEAD~1
+HEAD is now at 5a1f89a added car and bike text files
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git log
+PS C:\Users\kalir\OneDrive\Desktop\WEB DEV COHORT\git -practice> git log
+commit 5a1f89a4938a7a8816f016cfc3c3e32ad4a140d7 (HEAD -> main)
+Author: bhawna <kaliramanbhawna23@gmail.com>
+Author: bhawna <kaliramanbhawna23@gmail.com>
+Date:   Tue May 13 22:01:06 2025 +0530
+Date:   Tue May 13 22:01:06 2025 +0530
+added car and bike text files
+
+
+            TASK 3
+
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\kalir\Desktop\webdev cohort> cd "C:\Users\DELL-SHIVAAYTECH\Desktop\webdev cohort\git-practice-repo"
+PS C:\Users\kalir\Desktop\webdev cohort\git-practice-repo> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\kalir\Desktop\webdev cohort\git-practice-repo> git remote add origin https://github.com/bhumi751/git-practice-repo.git
+error: remote origin already exists.
+PS C:\Users\kalir\Desktop\webdev cohort\git-practice-repo> git remote remove origin
+PS C:\Users\kalir\Desktop\webdev cohort\git-practice-repo> git remote add origin https://github.com/bhumi751/git-practice-repo.git
+PS C:\Users\kalir\Desktop\webdev cohort\git-practice-repo> git branch -M main
+PS C:\Users\kalir\Desktop\webdev cohort\git-practice-repo> git push -u origin main
